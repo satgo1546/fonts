@@ -1,0 +1,207 @@
+name = AskUser("Rename")
+if (name != "")
+	version = AskUser("Set version", "v4.1")
+	SetFontNames(name, name, name, "", "", version)
+	// https://docs.microsoft.com/en-us/typography/opentype/spec/name
+	SetTTFName(0x0804, 0, "")
+	SetTTFName(0x0804, 1, "")
+	SetTTFName(0x0804, 2, "")
+	SetTTFName(0x0804, 3, "")
+	SetTTFName(0x0804, 4, "")
+	SetTTFName(0x0804, 5, "")
+	SetTTFName(0x0804, 7, "")
+	SetTTFName(0x0409, 1, name)
+	SetTTFName(0x0409, 3, name)
+	SetTTFName(0x0409, 4, name)
+	SetTTFName(0x0409, 5, version)
+endif
+
+if (!InFont(0u301a))
+	Select(0u3016); SetUnicodeValue(0u301a)
+	Select(0u3017); SetUnicodeValue(0u301b)
+endif
+if (SelectIf(0ue018) != -2); SetUnicodeValue(0u2031); endif
+if (SelectIf(0ue01b) != -2); SetUnicodeValue(0u2282); endif
+if (SelectIf(0ue01c) != -2); SetUnicodeValue(0u2283); endif
+if (SelectIf(0ue020) != -2); SetUnicodeValue(0u2286); endif
+if (SelectIf(0ue021) != -2); SetUnicodeValue(0u2287); endif
+if (SelectIf(0ue023) != -2); SetUnicodeValue(0u2243); endif
+if (SelectIf(0ue02e) != -2); SetUnicodeValue(0u212a); endif
+if (SelectIf(0ue02f) != -2); SetUnicodeValue(0u2200); endif
+if (SelectIf(0ue030) != -2); SetUnicodeValue(0u21d1); endif
+if (SelectIf(0ue032) != -2); SetUnicodeValue(0u21be); endif
+if (SelectIf(0ue033) != -2); SetUnicodeValue(0u21d3); endif
+if (SelectIf(0ue035) != -2); SetUnicodeValue(0u21c3); endif
+if (SelectIf(0ue038) != -2); SetUnicodeValue(0u22f0); endif
+if (SelectIf(0ue03a) != -2); SetUnicodeValue(0u21c6); endif
+if (SelectIf(0ue03b) != -2); SetUnicodeValue(0u2194); endif
+if (SelectIf(0ue03c) != -2); SetUnicodeValue(0u21d2); endif
+if (SelectIf(0ue03e) != -2); SetUnicodeValue(0u21c0); endif
+if (SelectIf(0ue040) != -2); SetUnicodeValue(0u21d0); endif
+if (SelectIf(0ue042) != -2); SetUnicodeValue(0u21bc); endif
+if (SelectIf(0ue044) != -2); SetUnicodeValue(0u2196); endif
+if (SelectIf(0ue045) != -2); SetUnicodeValue(0u2199); endif
+if (SelectIf(0ue046) != -2); SetUnicodeValue(0u2198); endif
+if (SelectIf(0ue047) != -2); SetUnicodeValue(0u2197); endif
+if (SelectIf(0ue049) != -2); SetUnicodeValue(0u2ac5); endif
+if (SelectIf(0ue04a) != -2); SetUnicodeValue(0u2ac6); endif
+if (SelectIf(0ue04b) != -2); SetUnicodeValue(0u29cb); endif
+if (SelectIf(0ue04c) != -2); SetUnicodeValue(0u226b); endif
+if (SelectIf(0ue04d) != -2); SetUnicodeValue(0u226a); endif
+if (SelectIf(0ue04e) != -2); SetUnicodeValue(0u2a72); endif
+if (SelectIf(0ue051) != -2); SetUnicodeValue(0u2277); endif
+if (SelectIf(0ue054) != -2); SetUnicodeValue(0u2109); endif
+if (SelectIf(0ue055) != -2); SetUnicodeValue(0u2203); endif
+if (SelectIf(0ue056) != -2); SetUnicodeValue(0u22f1); endif
+if (SelectIf(0ue05a) != -2); SetUnicodeValue(0u2276); endif
+if (SelectIf(0ue05e) != -2); SetUnicodeValue(0u224b); endif
+if (SelectIf(0ue05f) != -2); SetUnicodeValue(0u2262); endif
+if (SelectIf(0ue060) != -2); SetUnicodeValue(0u2251); endif
+if (SelectIf(0ue063) != -2); SetUnicodeValue(0u2259); endif
+if (SelectIf(0ue06a) != -2); SetUnicodeValue(0u0192); endif
+if (SelectIf(0ue06d) != -2); SetUnicodeValue(0u2249); endif
+if (SelectIf(0ue070) != -2); SetUnicodeValue(0u2af9); endif
+if (SelectIf(0ue071) != -2); SetUnicodeValue(0u2afa); endif
+if (SelectIf(0ue072) != -2); SetUnicodeValue(0u2245); endif
+if (SelectIf(0ue077) != -2); SetUnicodeValue(0u2213); endif
+if (SelectIf(0ue07b) != -2); SetUnicodeValue(0u2288); endif
+if (SelectIf(0ue07c) != -2); SetUnicodeValue(0u2289); endif
+if (SelectIf(0ue082) != -2); SetUnicodeValue(0u00a3); endif
+if (SelectIf(0ue085) != -2); SetUnicodeValue(0u211e); endif
+if (SelectIf(0ue089) != -2); SetUnicodeValue(0u2acb); endif
+if (SelectIf(0ue08a) != -2); SetUnicodeValue(0u2acc); endif
+if (SelectIf(0ue08b) != -2); SetUnicodeValue(0u225a); endif
+if (SelectIf(0ue096) != -2); SetUnicodeValue(0u216c); endif
+if (SelectIf(0ue097) != -2); SetUnicodeValue(0u216d); endif
+if (SelectIf(0ue098) != -2); SetUnicodeValue(0u216e); endif
+if (SelectIf(0ue099) != -2); SetUnicodeValue(0u216f); endif
+if (SelectIf(0ue0af) != -2); SetUnicodeValue(0u2660); endif
+if (SelectIf(0ue0b1) != -2); SetUnicodeValue(0u2b20); endif
+if (SelectIf(0ue0b2) != -2); SetUnicodeValue(0u23e2); endif
+if (SelectIf(0ue0b3) != -2); SetUnicodeValue(0u2663); endif
+if (SelectIf(0ue0b4) != -2); SetUnicodeValue(0u25b1); endif
+if (SelectIf(0ue0b5) != -2); SetUnicodeValue(0u25ad); endif
+if (SelectIf(0ue0b6) != -2); SetUnicodeValue(0u25af); endif
+if (SelectIf(0ue0b7) != -2); SetUnicodeValue(0u2665); endif
+if (SelectIf(0ue0b8) != -2); SetUnicodeValue(0u2666); endif
+if (SelectIf(0ue0b9) != -2); SetUnicodeValue(0u25c1); endif
+if (SelectIf(0ue0ba) != -2); SetUnicodeValue(0u25bd); endif
+if (SelectIf(0ue0bb) != -2); SetUnicodeValue(0u25b7); endif
+if (SelectIf(0ue0bc) != -2); SetUnicodeValue(0u25c0); endif
+if (SelectIf(0ue0bd) != -2); SetUnicodeValue(0u25bc); endif
+if (SelectIf(0ue0be) != -2); SetUnicodeValue(0u25b6); endif
+if (SelectIf(0ue0bf) != -2); SetUnicodeValue(0u25fa); endif
+if (SelectIf(0ue0c0) != -2); SetUnicodeValue(0u25ff); endif
+if (SelectIf(0ue0c2) != -2); SetUnicodeValue(0u27c1); endif
+if (SelectIf(0ue0cb) != -2); SetUnicodeValue(0u2020); endif
+if (SelectIf(0ue0f2) != -2); SetUnicodeValue(0u21cc); endif
+if (SelectIf(0ue104) != -2); SetUnicodeValue(0u2233); endif
+if (SelectIf(0ue105) != -2); SetUnicodeValue(0u2232); endif
+if (SelectIf(0ue106) != -2); SetUnicodeValue(0u222c); endif
+if (SelectIf(0ue107) != -2); SetUnicodeValue(0u222f); endif
+if (SelectIf(0ue108) != -2); SetUnicodeValue(0u222d); endif
+if (SelectIf(0ue109) != -2); SetUnicodeValue(0u2230); endif
+if (SelectIf(0ue113) != -2); SetUnicodeValue(0u00c6); endif
+if (SelectIf(0ue114) != -2); SetUnicodeValue(0u00e6); endif
+if (SelectIf(0ue115) != -2); SetUnicodeValue(0u0152); endif
+if (SelectIf(0ue116) != -2); SetUnicodeValue(0u0153); endif
+if (SelectIf(0ue119) != -2); SetUnicodeValue(0u00c5); endif
+if (!InFont(0u3280))
+	Select(0u3280, 0u3288); DetachAndRemoveGlyphs()
+	Select(0ue11a); SetUnicodeValue(0u3280)
+	Select(0ue11b); SetUnicodeValue(0u3281)
+	Select(0ue11c); SetUnicodeValue(0u3282)
+	Select(0ue11d); SetUnicodeValue(0u3283)
+	Select(0ue11e); SetUnicodeValue(0u3284)
+	Select(0ue11f); SetUnicodeValue(0u3285)
+	Select(0ue120); SetUnicodeValue(0u3286)
+	Select(0ue121); SetUnicodeValue(0u3287)
+	Select(0ue122); SetUnicodeValue(0u3288)
+endif
+if (SelectIf(0ue12e) != -2); SetUnicodeValue(0u24ea); endif
+if (SelectIf(0ue766) != -2); SetUnicodeValue(0u217a); endif
+if (SelectIf(0ue767) != -2); SetUnicodeValue(0u217b); endif
+if (SelectIf(0ue774) != -2); SetUnicodeValue(0u32a3); endif
+if (SelectIf(0ue775) != -2); SetUnicodeValue(0u329e); endif
+if (SelectIf(0ue776) != -2); SetUnicodeValue(0u32a4); endif
+if (SelectIf(0ue777) != -2); SetUnicodeValue(0u32a5); endif
+if (SelectIf(0ue778) != -2); SetUnicodeValue(0u32a6); endif
+if (SelectIf(0ue779) != -2); SetUnicodeValue(0u32a7); endif
+if (SelectIf(0ue77a) != -2); SetUnicodeValue(0u32a8); endif
+if (SelectIf(0ue77d) != -2); SetUnicodeValue(0u3016); endif
+if (SelectIf(0ue77e) != -2); SetUnicodeValue(0u3017); endif
+if (SelectIf(0ue7c7) != -2); SetUnicodeValue(0u1e3f); endif
+if (SelectIf(0ue7c8) != -2); SetUnicodeValue(0u01f9); endif
+if (SelectIf(0ue801) != -2); SetUnicodeValue(0u21e8); endif
+if (SelectIf(0ue802) != -2); SetUnicodeValue(0u21e6); endif
+if (SelectIf(0ue803) != -2); SetUnicodeValue(0u2b06); endif
+if (SelectIf(0ue804) != -2); SetUnicodeValue(0u2b07); endif
+if (SelectIf(0ue805) != -2); SetUnicodeValue(0u2b95); endif
+if (SelectIf(0ue806) != -2); SetUnicodeValue(0u2b05); endif
+if (SelectIf(0ue807) != -2); SetUnicodeValue(0u1f816); endif
+if (SelectIf(0ue808) != -2); SetUnicodeValue(0u1f814); endif
+if (SelectIf(0ue809) != -2); SetUnicodeValue(0u1f815); endif
+if (SelectIf(0ue80a) != -2); SetUnicodeValue(0u1f817); endif
+if (SelectIf(0ue80e) != -2); SetUnicodeValue(0u2195); endif
+
+if (SelectIf(0ue3ae) != -2); SetUnicodeValue(0u4ff5); endif
+if (SelectIf(0ue3af) != -2); SetUnicodeValue(0u90c3); endif
+if (SelectIf(0ue3b0) != -2); SetUnicodeValue(0u90ff); endif
+if (SelectIf(0ue3b1) != -2); SetUnicodeValue(0u5372); endif
+if (SelectIf(0ue3b2) != -2); SetUnicodeValue(0u5803); endif
+if (SelectIf(0ue3b3) != -2); SetUnicodeValue(0u8300); endif
+if (SelectIf(0ue3b4) != -2); SetUnicodeValue(0u68fb); endif
+if (SelectIf(0ue3b5) != -2); SetUnicodeValue(0u8456); endif
+if (SelectIf(0ue3b6) != -2); SetUnicodeValue(0u84c7); endif
+if (SelectIf(0ue3b7) != -2); SetUnicodeValue(0u8429); endif
+if (SelectIf(0ue3b8) != -2); SetUnicodeValue(0u6d38); endif
+if (SelectIf(0ue3b9) != -2); SetUnicodeValue(0u6e5c); endif
+if (SelectIf(0ue3ba) != -2); SetUnicodeValue(0u6f5f); endif
+if (SelectIf(0ue3bb) != -2); SetUnicodeValue(0u544e); endif
+if (SelectIf(0ue3bc) != -2); SetUnicodeValue(0u540b); endif
+
+if (SelectIf(0ue3e3) != -2); SetUnicodeValue(0u65fb); endif
+if (SelectIf(0ue3e4) != -2); SetUnicodeValue(0u65f8); endif
+if (SelectIf(0ue3e5) != -2); SetUnicodeValue(0u665e); endif
+if (SelectIf(0ue3e6) != -2); SetUnicodeValue(0u6b54); endif
+if (SelectIf(0ue3e7) != -2); SetUnicodeValue(0u98cf); endif
+if (SelectIf(0ue3e8) != -2); SetUnicodeValue(0u7aa3); endif
+if (SelectIf(0ue3e9) != -2); SetUnicodeValue(0u7ab8); endif
+if (SelectIf(0ue3ea) != -2); SetUnicodeValue(0u7ad1); endif
+if (SelectIf(0ue3eb) != -2); SetUnicodeValue(0u88aa); endif
+if (SelectIf(0ue3ec) != -2); SetUnicodeValue(0u77fb); endif
+if (SelectIf(0ue3ed) != -2); SetUnicodeValue(0u78e1); endif
+if (SelectIf(0ue3ee) != -2); SetUnicodeValue(0u25128); endif
+if (SelectIf(0ue3ef) != -2); SetUnicodeValue(0u7f7d); endif
+if (SelectIf(0ue3f0) != -2); SetUnicodeValue(0u9496); endif
+if (SelectIf(0ue3f1) != -2); SetUnicodeValue(0u28c4d); endif
+if (SelectIf(0ue3f2) != -2); SetUnicodeValue(0u954b); endif
+if (SelectIf(0ue3f3) != -2); SetUnicodeValue(0u9555); endif
+if (SelectIf(0ue3f4) != -2); SetUnicodeValue(0u956e); endif
+if (SelectIf(0ue3f5) != -2); SetUnicodeValue(0u4986); endif
+if (SelectIf(0ue3f6) != -2); SetUnicodeValue(0u9899); endif
+if (SelectIf(0ue3f7) != -2); SetUnicodeValue(0u880b); endif
+if (SelectIf(0ue3f8) != -2); SetUnicodeValue(0u7b93); endif
+if (SelectIf(0ue3f9) != -2); SetUnicodeValue(0u7fda); endif
+if (SelectIf(0ue3fa) != -2); SetUnicodeValue(0u8e21); endif
+if (SelectIf(0ue3fb) != -2); SetUnicodeValue(0u9770); endif
+if (SelectIf(0ue3fc) != -2); SetUnicodeValue(0u97a1); endif
+if (SelectIf(0ue3fd) != -2); SetUnicodeValue(0u2c317); endif
+
+if (SelectIf(0ue782) != -2); SetUnicodeValue(0ufe47); endif
+if (SelectIf(0ue783) != -2); SetUnicodeValue(0ufe48); endif
+
+SelectAll()
+MultipleEncodingsToReferences()
+
+if (Strsub($fontname, 0, 4) != "Jade")
+	Reencode("unicode")
+	RemoveDetachedGlyphs()
+
+	SelectAll()
+	RemoveOverlap()
+	CorrectDirection(0)
+	// AddExtrema()
+	Simplify(-1, 0)
+	RoundToInt()
+endif
